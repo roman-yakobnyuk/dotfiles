@@ -1,0 +1,26 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"Babel",
+		"Boxy Theme",
+		"EditorConfig",
+		"Emmet",
+		"Evernote",
+		"GitGutter",
+		"ISML",
+		"JsPrettier",
+		"LaTeXTools",
+		"Levels",
+		"Package Control",
+		"SCSS",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
+		"Text Pastry"
+	]
+}
