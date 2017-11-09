@@ -1,3 +1,4 @@
+## Prompt Generation ##
 source $HOME/shell-scripts/git-completion.bash
 source $HOME/shell-scripts/git-prompt.sh
 
@@ -26,7 +27,7 @@ function generate_prompt {
     if git branch &>/dev/null; then
       CURRENT_BRANCH_NAME="$(git symbolic-ref HEAD 2>/dev/null)" ||
       CURRENT_BRANCH_NAME="(unnamed branch)"     # detached HEAD
-      CURRENT_BRANCH_NAME=${branch_name##refs/heads/}
+      CURRENT_BRANCH_NAME=${CURRENT_BRANCH_NAME##refs/heads/}
 
       # Clean branch colour
       GIT_COLOUR=$NONE;
@@ -56,9 +57,11 @@ function generate_prompt {
 
 export PROMPT_COMMAND=generate_prompt
 
-## Aliases ##
+## System Aliases ##
 # LS command workaround for Mac OS with brew coreutils
 alias ls='/usr/local/bin/gls --color -h --group-directories-first -1'
+
+## Git Aliases ##
 
 ## Node.js ##
 # Use local project binaries
