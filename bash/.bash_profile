@@ -26,7 +26,7 @@ function generate_prompt {
     # Check if git repository
     if git branch &>/dev/null; then
       CURRENT_BRANCH_NAME="$(git symbolic-ref HEAD 2>/dev/null)" ||
-      CURRENT_BRANCH_NAME="(unnamed branch)"     # detached HEAD
+      CURRENT_BRANCH_NAME="$(git log -n 1 --pretty=%D HEAD)"     # detached HEAD
       CURRENT_BRANCH_NAME=${CURRENT_BRANCH_NAME##refs/heads/}
 
       # Clean branch colour
@@ -60,8 +60,15 @@ export PROMPT_COMMAND=generate_prompt
 ## System Aliases ##
 # LS command workaround for Mac OS with brew coreutils
 alias ls='/usr/local/bin/gls --color -h --group-directories-first -1'
+alias now='%T %d-%m-%Y'
+alias c='clear'
 
 ## Git Aliases ##
+alias gp='git push'
+alias gs='git status'
+alias gb='git branch'
+alias gc='git checkout'
+alias gt='git tag'
 
 ## Node.js ##
 # Use local project binaries
