@@ -6,5 +6,6 @@
     "extension.prophet.cartridges.view.enabled": false,
     "vim.mouseSelectionGoesIntoVisualMode": false,
     "vim.sneak": true,
-    "vim.statusBarColorControl": true
+    "vim.statusBarColorControl": true,
+    "workbench.editor.enablePreview": false
 }

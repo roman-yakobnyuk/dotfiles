@@ -8,5 +8,21 @@
     { "key": "cmd+6","command": "workbench.action.openEditorAtIndex6" },
     { "key": "cmd+7","command": "workbench.action.openEditorAtIndex7" },
     { "key": "cmd+8","command": "workbench.action.openEditorAtIndex8" },
-    { "key": "cmd+9","command": "workbench.action.openLastEditorInGroup" }
+    {
+        "key": "cmd+9",
+        "command": "workbench.action.openLastEditorInGroup"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "editor.emmet.action.expandAbbreviation"
+    },
+    {
+        "key": "tab",
+        "command": "-editor.emmet.action.expandAbbreviation",
+        "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "emmet.expandAbbreviation"
+    }
 ]
