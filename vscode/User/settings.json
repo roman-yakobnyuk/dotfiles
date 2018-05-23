@@ -4,4 +4,7 @@
     "files.defaultLanguage": "markdown",
     "editor.renderWhitespace": "boundary",
     "extension.prophet.cartridges.view.enabled": false,
+    "vim.mouseSelectionGoesIntoVisualMode": false,
+    "vim.sneak": true,
+    "vim.statusBarColorControl": true
 }
