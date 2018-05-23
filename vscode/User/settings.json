@@ -1,0 +1,7 @@
+{
+    "workbench.colorTheme": "Monokai",
+    "editor.fontSize": 18,
+    "files.defaultLanguage": "markdown",
+    "editor.renderWhitespace": "boundary",
+    "extension.prophet.cartridges.view.enabled": false,
+}
