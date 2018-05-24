@@ -7,5 +7,13 @@
     "vim.mouseSelectionGoesIntoVisualMode": false,
     "vim.sneak": true,
     "vim.statusBarColorControl": true,
-    "workbench.editor.enablePreview": false
+    "workbench.editor.enablePreview": false,
+    "workbench.iconTheme": "vscode-icons",
+    "files.associations": {
+        "*.isml": "html"
+    },
+    "window.zoomLevel": 0,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "workbench.sideBar.location": "left",
+    "editor.minimap.enabled": false
 }
