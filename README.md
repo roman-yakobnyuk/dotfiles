@@ -8,11 +8,12 @@ It is constant work in progress as I try to move most of my environments to same
 
 * Install homebrew
 
+## Install Coreutils for Mac OS
 
-# Useful Notes
+To support improved `ls` command, you need to install `coreutils` package using homebrew. If you decide not to use it, you need to update `/bash/.bash_profile` to remove the alias.
 
-Symlinking
+To install `coreutils`, use the following command:
 
 ```
-ln -s /source/file file
+brew install coreutils
 ```
